@@ -44,7 +44,7 @@ body {
     border: 2px #fff solid;
     border-radius: 3px;
     height: 400px;
-    width: 800px;
+    width: 1000px;
     justify-content: space-between;
     padding: 50px;
     box-shadow: 
@@ -112,7 +112,7 @@ button:active {
 .computerelements { 
     flex-direction: row;
     height: 210px;
-    width : 350px;
+    width : 210px;
     border-radius: 3px;
     text-shadow:
     0 0 7px #fff,
@@ -220,7 +220,7 @@ button:active {
     flex-direction: row;
     border:#fff 1px solid;
     height: 210px;
-    width : 350px;
+    width : 210px;
     border-radius: 3px;
     align-content: center;
     text-shadow:
@@ -320,7 +320,7 @@ button:active {
     text-align: center;
     /* border: red 1px solid; */
     height: 430px;
-    width: 300px;
+    width: 250px;
     align-content:space-evenly;
 }
 #Displaybox {
@@ -383,83 +383,179 @@ button:active {
 #RESTART{
     justify-content: center;
 }
-#inWarCardComputer { 
+.war_player {
+    display: flex
+
+}
+.war_computer {
+    display: flex
+
+}
+#inWarCardComputer1 { 
     display: flex;
-    border: none;
-    width: 120px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
-    justify-content: right;
+    justify-content: left;
     align-content: center;
-    font-size:40px;
+    font-size:30px;
     margin: 0 auto;
     color: #ffffff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px #ffffff,
     0 0 20px #fa0000;
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+}
+#inWarCardComputer2 { 
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:30px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+}
+#inWarCardComputer3 { 
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:30px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+}
+#inWarCardComputer4 { 
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:30px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
 }
 #inWarCardPlayer1 {  
     display: flex;
-    border: none;
-    width: 120px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:40px;
+    font-size:30px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    
 }
 #inWarCardPlayer2 {  
     display: flex;
-    border: none;
-    width: 120px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:40px;
+    font-size:30px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    
 }
 #inWarCardPlayer3 {  
     display: flex;
-    border: none;
-    width: 120px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:40px;
+    font-size:30px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    
 }
 #inWarCardPlayer4 {  
     display: flex;
-    border: none;
-    width: 120px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:40px;
+    font-size:30px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    
 }

@@ -140,7 +140,7 @@ function compareCards() {
                         playerInWarCard.rank > computerInWarCard.rank){
                             playerDiscardPile.push(computerInWarCard,
                             computerInWarCardsArray,playerInWarCard,playerInWarCardsArray),
-                             gameStatus.innerText ="Player has won the war"}
+                            gameStatus.innerText ="Player has won the war"}
                             else {gameStatus.innerText= 'Its another draw'}
                         }, 2000);
                 

@@ -399,7 +399,55 @@ button:active {
     0 0 20px #fa0000;
     font-size: 40px;
 }
-#inWarCardPlayer {  
+#inWarCardPlayer1 {  
+    display: flex;
+    border: none;
+    width: 120px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    font-size: 40px;
+}
+#inWarCardPlayer2 {  
+    display: flex;
+    border: none;
+    width: 120px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    font-size: 40px;
+}
+#inWarCardPlayer3 {  
+    display: flex;
+    border: none;
+    width: 120px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    font-size: 40px;
+}
+#inWarCardPlayer4 {  
     display: flex;
     border: none;
     width: 120px;

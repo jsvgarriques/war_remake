@@ -1,0 +1,417 @@
+html {
+    background-image: url('../Images/stand-off.jpeg');
+    background-size: cover;
+}
+.topBar { 
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 600px;
+    box-shadow: 
+        0 0 7px #ffffff,
+        0 0 15px #ffffff,
+        0 0 25px #ffffff,
+        0 0 40px #ffffff;
+}
+.bottomBar { 
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 600px;
+    box-shadow: 
+        0 0 7px #ffffff,
+        0 0 15px #ffffff
+        0 0 25px #ffffff
+        0 0 40px #ffffff;
+}
+body {
+    align-content: space-evenly;
+    background-color: transparent;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:50px;
+}
+.Table {
+    display: flex;
+    background-color: transparent;
+    border: 2px #fff solid;
+    border-radius: 3px;
+    height: 400px;
+    width: 800px;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 25px #ffffff,
+    0 0 40px #ffffff;
+    animation-name: border;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes border {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%  {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px #ffffff;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100% {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff};
+}
+button { 
+    display: grid;
+    background-color:transparent; 
+    color: #ffffff;
+    text-align: center;
+    text-justify: center;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    align-items: center;
+    border:none;
+}
+#pulls_card { 
+    margin-top: 40px;
+}
+button:hover  {
+    border: #ffffff 1px solid;
+    border-radius: 2px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(255, 255, 255);
+    border: 1px solid #fff;
+}
+button:active {
+    transform:translateY(5px) ;
+    box-shadow: 0 0 20px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #fff,
+    0 0 82px rgb(0, 225, 255);
+}
+/* .deal {
+    justify-content: center;
+    align-content: left;
+} */
+.computerelements { 
+    flex-direction: row;
+    height: 210px;
+    width : 350px;
+    border-radius: 3px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ffffff,
+    0 0 82px #ffffff;
+    border: 1px #ffffff solid;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
+  }
+
+.cardsWonComputer { 
+    display: grid;
+    /* border:1px rgb(255, 255, 255) solid; */
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    background-color: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 30px;
+    align-content: center;
+    justify-items: center;
+    font-size: 30px;
+    text-shadow: 
+        0 0 7px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #fa0000;
+}
+.psuit  { 
+    color: #ffffff;
+    justify-items: center;
+    margin: 0 auto;
+    font-size: 50px;
+}
+#crank {
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: 
+        0 0 7px #ffffff,
+        0 0 15px #fa0000,
+        0 0 20px #fa0000;
+    font-size: 25px;
+}
+#csuit  { 
+    color: #ffffff;
+    text-shadow: 
+        0 0 7px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #fa0000;;
+    justify-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 75px;
+}
+#prank {
+    padding: 5px;
+    color: #ffffff;
+    font-size: 25px;
+    height: 20px;
+}
+#psuit  { 
+    color: #ffffff;
+    justify-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 75px;
+}
+.computers_card { 
+    display: grid;
+    border: 2px #ffffff solid;
+    height: 150px;
+    width: 100px;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;   
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+}
+.playerelements { 
+    flex-direction: row;
+    border:#fff 1px solid;
+    height: 210px;
+    width : 350px;
+    border-radius: 3px;
+    align-content: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 225, 255),
+    0 0 82px rgb(0, 225, 255);
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 25px #ffffff,
+    0 0 30px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)};
+}
+.displayboxPlayer{
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    font-size: 20px;
+    margin: 5px;
+}
+.displayboxcomputer {
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px red;
+    font-size: 20px;
+    margin: 5px;
+    margin: 5px;
+}
+.players_card { 
+    display: grid;
+    border:2px #fff solid;
+    height: 150px;
+    width: 100px;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 25px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    background-color: 0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+}
+.cardsWonPlayer {  
+    display:grid;
+    /* border:1px rgb(255, 255, 255) solid; */
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 30px;
+    align-content: center;
+    justify-items: center;
+}
+
+.center_box { 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* border: red 1px solid; */
+    height: 430px;
+    width: 300px;
+    align-content:space-evenly;
+}
+#Displaybox {
+    display: grid;
+    /* border: purple 1px solid; */
+    height: 100px;
+    width: 250px;
+    color: black;
+    justify-self: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: 30px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px red,
+    0 0 21px red,
+    0 0 70px red
+}
+#gameStatus {
+    display: grid;
+    /* border: purple 1px solid; */
+    height: 100px;
+    width: 250px;
+    color: #ffffff;
+    justify-self: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: 30px;
+    color: black;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 25px #ffffff,
+    0 0 40px #ffffff;
+    animation-name: brightenGameStatus;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenGameStatus {
+    0%   {text-shadow:0 0 7px #ffffff}
+    25%   {text-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px #ffffff;}
+    50%  {text-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {text-shadow: 0 0 7px #ffffff,
+                        0 0 80px #ffffff;}
+}
+/* #deal{
+    
+} */
+#deal:hover  {
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px r#ffffff,
+    0 0 20px rgb(0, 191, 255);
+    border: 1px solid #fff;
+}
+#RESTART{
+    justify-content: center;
+}
+#inWarCardComputer { 
+    display: flex;
+    border: none;
+    width: 120px;
+    height: 75px;
+    justify-content: right;
+    align-content: center;
+    font-size:40px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    font-size: 40px;
+}
+#inWarCardPlayer {  
+    display: flex;
+    border: none;
+    width: 120px;
+    height: 75px;
+    justify-content: left;
+    align-content: center;
+    font-size:40px;
+    margin:0 auto;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    font-size: 40px;
+}

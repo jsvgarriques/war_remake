@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/war.css">
+    <script src="./war.js" defer></script>
+
+    <title>War</title>
+</head>
+<body>
+        <div class= 'Table'>
+            <div class= 'computerelements'> 
+                <div class='displayboxcomputer'>  Computer</div>
+                    <div class='computers_card'>
+                        <div id='crank'></div> 
+                        <div id='csuit'>♠</div> 
+                    </div>
+                    <div class='cardsWonComputer'>-----</div>
+                        <div id= inWarCardComputer>
+                            <div id='cwarcardrank'></div> 
+                            <div id='cwarcardsuit'>♦♥♣♠</div> 
+                        </div> 
+            </div>  
+                     
+                <div class='center_box'>
+                    <div id='Displaybox'>WAR</div>
+                    <div id='gameStatus' >Press Deal</div>
+                    <button id ='deal'>Deal</button>
+                    <button id='Restart'>Restart</button>
+                </div>
+               
+            <div class= 'playerelements'> 
+                <div class='displayboxPlayer'>Player</div>
+                     <div class='players_card'>
+                        <div id='prank'></div> 
+                        <div id='psuit'>♠</div> 
+                    </div>
+                        <div class='cardsWonPlayer'>-----</div>
+                            <div id= inWarCardPlayer>
+                                <div id='pwarcardrank'></div> 
+                                <div id='pwarcardsuit'>♠♣♥♦</div> 
+                            </div>
+                        
+                        <button id='pulls_card'>Play Card</button>
+        
+            </div>
+    </div>
+</body>
+    
+</html>

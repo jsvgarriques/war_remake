@@ -23,17 +23,49 @@ const cardCountComputer= document.querySelector('.cardCountComputer');
 const computerElementsBox = document.querySelector('computerelements');
 let computerRank=  document.querySelector('#crank');
 let computerSuit = document.querySelector("#csuit");
-let computerWarCardRank=document.querySelector('#cwarcardrank')
-let computerWarCardSuit=document.querySelector('#cwarcardsuit')
+
+let computerWarCard1 = document.querySelector('#inWarCardComputer1')
+let computerWarCardRank1=document.querySelector('#cwarcardrank1')
+let computerWarCardSuit1=document.querySelector('#cwarcardsuit1')
+
+let computerWarCard2 = document.querySelector('#inWarCardComputer2')
+let computerWarCardRank2=document.querySelector('#cwarcardrank2')
+let computerWarCardSuit2=document.querySelector('#cwarcardsuit2')
+
+let computerWarCard3 = document.querySelector('#inWarCardComputer3')
+let computerWarCardSuit3=document.querySelector('#cwarcardsuit3')
+let computerWarCardRank3=document.querySelector('#cwarcardrank3')
+
+let computerWarCard4 = document.querySelector('#inWarCardComputer4')
+let computerWarCardSuit4=document.querySelector('#cwarcardsuit4')
+let computerWarCardRank4=document.querySelector('#cwarcardrank4')
+//        --------computer war variables--------------
+
 //         ----------playerstuff---------------
 let players_deck = document.querySelector('.players_deck');
 let cardsWonPlayer= document.querySelector('.cardsWonPlayer');
 let cardcountplayer= document.querySelector('cardcountplayer');
+
 let playerElementsBox = document.querySelector('playerelements');
 let playerRank= document.querySelector('#prank');
 let playerSuit= document.querySelector('#psuit');
-let playerWarCardRank=document.querySelector('#pwarcardrank')
-let playerWarCardSuit=document.querySelector('#pwarcardsuit')
+//        --------player war variables--------------
+let playerWarCard1 = document.querySelector('#inWarCardPlayer1')
+let playerWarCardRank1=document.querySelector('#pwarcardrank1')
+let playerWarCardSuit1=document.querySelector('#pwarcardsuit1')
+
+let playerWarCard2 = document.querySelector('#inWarCardPlayer2')
+let playerWarCardRank2=document.querySelector('#pwarcardrank2')
+let playerWarCardSuit2=document.querySelector('#pwarcardsuit2')
+
+let playerWarCard3 = document.querySelector('#inWarCardPlayer3')
+let playerWarCardSuit3=document.querySelector('#pwarcardsuit3')
+let playerWarCardRank3=document.querySelector('#pwarcardrank3')
+
+let playerWarCard4 = document.querySelector('#inWarCardPlayer4')
+let playerWarCardSuit4=document.querySelector('#pwarcardsuit4')
+let playerWarCardRank4=document.querySelector('#pwarcardrank4')
+
 //      ---------gamestatusbox------------
 let gameStatus = document.querySelector('#gameStatus');
 //      ---------querySelector------------
@@ -78,7 +110,7 @@ createDeck()//invoking
 function dealCards(){
     playerCardsArray = (deck.splice(0,26)) //link to the html of the card count
     computerCardsArray  = (deck.splice(0,26))
-    gameStatus.innerText = "Play a card"//link this to the html of the carcount
+    gameStatus.innerText = "Play a card"//link this to the html of the card count
     cardsWonComputer.innerText=computerCardsArray.length;
     cardsWonPlayer.innerText=playerCardsArray.length;
     // console.log(playerCardsArray, playerCards, computerCardsArray, computerCards);
@@ -101,8 +133,8 @@ function playCard (){
     // console.log(playerWarCard.suit)
     compareCards();//insert timeout function
     } else {
-     pullFromDiscard();
-     winnerOfGame();
+        pullFromDiscard();
+        winnerOfGame();
     }
 }
 
@@ -121,28 +153,75 @@ function compareCards() {
         // -----I need to make this a function-----
             gameStatus.innerText = "It's Draw";
                 playerInWarCardsArray = playerCardsArray.splice(0,4),
-                computerInWarCardsArray = computerCardsArray.splice(0,4)
-                // console.log(computerInWarCardsArray, playerInWarCardsArray);
-                playerInWarCard = playerInWarCardsArray.shift()
-                computerInWarCard = computerInWarCardsArray.shift()
+
+                InWarCardPlayer1 = playerInWarCardsArray[0];
+                InWarCardPlayer2 = playerInWarCardsArray[1];
+                InWarCardPlayer3 = playerInWarCardsArray[2];
+                InWarCardPlayer4 = playerInWarCardsArray[3];
+
+                computerInWarCardsArray = computerCardsArray.splice(0,4),
+
+                InWarCardComputer1 = computerInWarCardsArray[0];
+                InWarCardComputer2 = computerInWarCardsArray[1];
+                InWarCardComputer3 = computerInWarCardsArray[2];
+                InWarCardComputer4 = computerInWarCardsArray[3];
+                console.log(computerInWarCardsArray, playerInWarCardsArray);
+                
+                console.log(InWarCardPlayer4);
+                // computerInWarCard = computerInWarCardsArray.shift(0)
+            //    gonna change this to make each spcific card equal to its corresondng memeber of the array, then compare the last card
                 // console.log(computerInWarCard, playerInWarCard)
-                playerWarCardRank.innerText=playerInWarCard.rank;
-                playerWarCardSuit.innerText=playerInWarCard.suit;
-                computerWarCardRank.innerText=computerInWarCard.rank;
-                computerWarCardSuit.innerText=computerInWarCard.suit;
+            setInterval(() => {
+                playerWarCardRank1.innerText=InWarCardPlayer1.rank;
+                playerWarCardSuit1.innerText=InWarCardPlayer1.suit;
+            },1000);
+                
+            setInterval(()=> {
+                playerWarCardRank2.innerText=InWarCardPlayer2.rank;
+                playerWarCardSuit2.innerText=InWarCardPlayer2.suit;
+            },2000);
+
+            setInterval(()=> {
+                playerWarCardRank3.innerText=InWarCardPlayer3.rank;
+                playerWarCardSuit3.innerText=InWarCardPlayer3.suit;
+            },3000);
+            
+            setInterval(()=> {
+                playerWarCardRank4.innerText=InWarCardPlayer4.rank;
+                playerWarCardSuit4.innerText=InWarCardPlayer4.suit;
+            },4000);
+
+            setInterval(() => {
+                computerWarCardRank1.innerText=InWarCardComputer1.rank;
+                computerWarCardSuit1.innerText=InWarCardComputer1.suit;
+            },1000);
+                
+            setInterval(() => {
+                computerWarCardRank2.innerText=InWarCardComputer2.rank;
+                computerWarCardSuit2.innerText=InWarCardComputer2.suit;
+            },2000);
+
+            setInterval(() => {
+                computerWarCardRank3.innerText=InWarCardComputer3.rank;
+                computerWarCardSuit3.innerText=InWarCardComputer3.suit;
+            },3000);
+
+            setInterval(() => {
+                computerWarCardRank4.innerText=InWarCardComputer4.rank;
+                computerWarCardSuit4.innerText=InWarCardComputer4.suit;
+            },4000);
                 // -----timer-----
                 setInterval(() => {
                 if(
-                    computerInWarCard.rank > playerInWarCard.rank){
+                    InWarCardComputer4.value > InWarCardPlayer4.value){
                     gameStatus.innerText= "Computer has won the War",
-                computerDiscardPile.push(computerInWarCard,computerInWarCardsArray,playerInWarCard,playerInWarCardsArray)}
+                computerDiscardPile.push(computerInWarCardsArray,playerInWarCardsArray)}
                     else if(
-                        playerInWarCard.rank > computerInWarCard.rank){
-                            playerDiscardPile.push(computerInWarCard,
-                            computerInWarCardsArray,playerInWarCard,playerInWarCardsArray),
-                             gameStatus.innerText ="Player has won the war"}
+                        InWarCardPlayer4.value > InWarCardComputer4.value){
+                            playerDiscardPile.push(computerInWarCardsArray,playerInWarCardsArray),
+                            gameStatus.innerText ="Player has won the war"}
                             else {gameStatus.innerText= 'Its another draw'}
-                        }, 2000);
+                        }, 5000);
                 
         }
     

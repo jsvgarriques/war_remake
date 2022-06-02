@@ -41,20 +41,20 @@ body {
 .Table {
     display: flex;
     background-color: transparent;
-    border: 2px #fff solid;
+    /* border: 2px #fff solid; */
     border-radius: 3px;
     height: 400px;
-    width: 800px;
+    width: 1000px;
     justify-content: space-between;
     padding: 50px;
-    box-shadow: 
+    /* box-shadow: 
     0 0 7px #ffffff,
     0 0 15px #ffffff,
     0 0 25px #ffffff,
-    0 0 40px #ffffff;
-    animation-name: border;
+    0 0 40px #ffffff; */
+    /* animation-name: border;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 @keyframes border {
     0%   {box-shadow:0 0 7px #ffffff}
@@ -112,8 +112,8 @@ button:active {
 .computerelements { 
     flex-direction: row;
     height: 210px;
-    width : 350px;
-    border-radius: 3px;
+    width : 210px;
+    /* border-radius: 3px;
     text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
@@ -128,8 +128,8 @@ button:active {
     0 0 30px red;
     animation-name: brightenComputerDisplayBox;
     animation-duration: 5s; 
-    animation-iteration-count: infinite;
-    }
+    animation-iteration-count: infinite; */
+    /* }
 @keyframes brightenComputerDisplayBox {
     0%   {box-shadow:0 0 7px #ffffff}
     25%   {box-shadow:0 0 7px #ffffff,
@@ -139,7 +139,7 @@ button:active {
     50%  {box-shadow: 0 0 7px #ffffff,
                         0 0 15px #ffffff;}
     100%  {box-shadow: 0 0 7px #ffffff,
-                        0 0 15px red;}
+                        0 0 15px red;} */
   }
 
 .cardsWonComputer { 
@@ -211,17 +211,39 @@ button:active {
     padding: 10px;
     color: #fff;
     font-size: 25px;   
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ffffff,
+    0 0 82px #ffffff;
+    border: 1px #ffffff solid;
     box-shadow: 
     0 0 7px #ffffff,
-    0 0 15px #ffffff,
-    0 0 20px #fa0000;
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; */
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
 }
 .playerelements { 
     flex-direction: row;
-    border:#fff 1px solid;
+    /* border:#fff 1px solid; */
     height: 210px;
-    width : 350px;
-    border-radius: 3px;
+    width : 210px;
+    /* border-radius: 3px;
     align-content: center;
     text-shadow:
     0 0 7px #fff,
@@ -247,7 +269,7 @@ button:active {
     50%  {box-shadow: 0 0 7px #ffffff,
                         0 0 15px #ffffff;}
     100%  {box-shadow: 0 0 7px #ffffff,
-                        0 0 15px rgb(0, 191, 255)};
+                        0 0 15px rgb(0, 191, 255)}; */
 }
 .displayboxPlayer{
     display: flex;
@@ -292,13 +314,34 @@ button:active {
     padding: 10px;
     color: #ffffff;
     font-size: 25px;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(0, 225, 255),
+    0 0 82px rgb(0, 225, 255);
     box-shadow: 
     0 0 7px #ffffff,
-    0 0 15px rgb(255, 255, 255),
-    0 0 20px rgb(0, 191, 255);
+    0 0 15px #ffffff,
+    0 0 25px #ffffff,
+    0 0 30px rgb(0, 191, 255);
     background-color: 0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)}; */
 }
 .cardsWonPlayer {  
     display:grid;
@@ -320,7 +363,7 @@ button:active {
     text-align: center;
     /* border: red 1px solid; */
     height: 430px;
-    width: 300px;
+    width: 250px;
     align-content:space-evenly;
 }
 #Displaybox {
@@ -382,36 +425,302 @@ button:active {
 }
 #RESTART{
     justify-content: center;
+    
 }
-#inWarCardComputer { 
-    display: flex;
-    border: none;
-    width: 120px;
+.war_player {
+    display: flex
+
+}
+.war_computer {
+    display: flex
+
+}
+#inWarCardComputer1 { 
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
-    justify-content: right;
+    justify-content: center;
     align-content: center;
-    font-size:40px;
-    margin: 0 auto;
-    color: #ffffff;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px #ffffff,
     0 0 20px #fa0000;
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
 }
-#inWarCardPlayer {  
-    display: flex;
-    border: none;
-    width: 120px;
+#inWarCardComputer2 { 
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
     height: 75px;
-    justify-content: left;
+    justify-content: center;
     align-content: center;
-    font-size:40px;
+    font-size:25px;
     margin:0 auto;
     color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
+}
+#inWarCardComputer3 { 
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red;
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
+}
+#inWarCardComputer4 { 
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 55px;
+    height: 80px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px #ffffff,
+    0 0 20px #fa0000;
+     box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 25px rgb(255, 255, 255),
+    0 0 30px red; 
+    animation-name: brightenComputerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    }
+@keyframes brightenComputerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px red;}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px red;}
+}
+#inWarCardPlayer1 {  
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 20px rgb(0, 191, 255);
-    font-size: 40px;
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)};
+    
+    
+}
+#inWarCardPlayer2 {  
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)};
+    
+}
+#inWarCardPlayer3 {  
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 75px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)};
+    
+}
+#inWarCardPlayer4 {  
+    display: grid;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 55px;
+    height: 80px;
+    justify-content: center;
+    align-content: center;
+    font-size:25px;
+    margin:0 auto;
+    color: #fff;
+    padding: 3px;
+    text-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    box-shadow: 
+    0 0 7px #ffffff,
+    0 0 15px rgb(255, 255, 255),
+    0 0 20px rgb(0, 191, 255);
+    animation-name: brightenPlayerDisplayBox;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes brightenPlayerDisplayBox {
+    0%   {box-shadow:0 0 7px #ffffff}
+    25%   {box-shadow:0 0 7px #ffffff,
+                    0 0 15px #ffffff,
+                    0 0 25px #ffffff,
+                    0 0 80px rgb(0, 191, 255);}
+    50%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px #ffffff;}
+    100%  {box-shadow: 0 0 7px #ffffff,
+                        0 0 15px rgb(0, 191, 255)};
+    
 }

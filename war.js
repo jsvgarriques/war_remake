@@ -41,19 +41,24 @@ let computerWarCardRank4=document.querySelector('#cwarcardrank4')
 let players_deck = document.querySelector('.players_deck');
 let cardsWonPlayer= document.querySelector('.cardsWonPlayer');
 let cardcountplayer= document.querySelector('cardcountplayer');
+
 let playerElementsBox = document.querySelector('playerelements');
 let playerRank= document.querySelector('#prank');
 let playerSuit= document.querySelector('#psuit');
 //        --------player war variables--------------
+let playerWarCard1 = document.querySelector('#inWarCardPlayer1')
 let playerWarCardRank1=document.querySelector('#pwarcardrank1')
 let playerWarCardSuit1=document.querySelector('#pwarcardsuit1')
 
+let playerWarCard2 = document.querySelector('#inWarCardPlayer2')
 let playerWarCardRank2=document.querySelector('#pwarcardrank2')
 let playerWarCardSuit2=document.querySelector('#pwarcardsuit2')
 
-let playerWarCardSuit3=document.querySelector('#pwarcardsuit2')
-let playerWarCardRank3=document.querySelector('#pwarcardrank2')
+let playerWarCard3 = document.querySelector('#inWarCardPlayer3')
+let playerWarCardSuit3=document.querySelector('#pwarcardsuit3')
+let playerWarCardRank3=document.querySelector('#pwarcardrank3')
 
+let playerWarCard4 = document.querySelector('#inWarCardPlayer4')
 let playerWarCardSuit4=document.querySelector('#pwarcardsuit4')
 let playerWarCardRank4=document.querySelector('#pwarcardrank4')
 
@@ -138,7 +143,7 @@ function compareCards() {
     } 
         else if (computerWarCard.value > playerWarCard.value) { 
             computerDiscardPile.push(playerWarCard, computerWarCard), gameStatus.innerText="Computer Wins!!!"
-            // console.log(computerDiscardPile)
+            console.log(computerDiscardPile)
             ;
     } else {
         // -----I need to make this a function-----
@@ -146,13 +151,14 @@ function compareCards() {
                 playerInWarCardsArray = playerCardsArray.splice(0,4),
                 computerInWarCardsArray = computerCardsArray.splice(0,4)
                 // console.log(computerInWarCardsArray, playerInWarCardsArray);
-                playerInWarCard1 = playerInWarCardsArray.shift(0)
-                computerInWarCard = computerInWarCardsArray.shift()
+                playerInWarCard1 = playerInWarCardsArray[0]
+                // computerInWarCard = computerInWarCardsArray.shift(0)
+            //    gonna change this to make each spcific card equal to its corresondng memeber of the array, then compare the last card
                 // console.log(computerInWarCard, playerInWarCard)
-                playerWarCardRank.innerText=playerInWarCard.rank;
-                playerWarCardSuit.innerText=playerInWarCard.suit;
-                computerWarCardRank.innerText=computerInWarCard.rank;
-                computerWarCardSuit.innerText=computerInWarCard.suit;
+                playerWarCardRank1.innerText=playerInWarCard.rank;
+                playerWarCardSuit1.innerText=playerInWarCard.suit;
+                computerWarCardRank1.innerText=computerInWarCard.rank;
+                computerWarCardSuit1.innerText=computerInWarCard.suit;
                 // -----timer-----
                 setInterval(() => {
                 if(

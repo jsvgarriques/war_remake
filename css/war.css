@@ -399,7 +399,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size: 25px;
     margin: 0 auto;
     color: #ffffff;
     text-shadow: 
@@ -420,7 +420,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size: 25px;
     margin: 0 auto;
     color: #ffffff;
     text-shadow: 
@@ -441,7 +441,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size:25px;
     margin: 0 auto;
     color: #ffffff;
     text-shadow: 
@@ -462,14 +462,14 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size: 25px;
     margin: 0 auto;
     color: #ffffff;
     text-shadow: 
     0 0 7px #ffffff,
     0 0 15px #ffffff,
     0 0 20px #fa0000;
-    box-shadow: 
+     box-shadow: 
     0 0 7px #ffffff,
     0 0 15px rgb(255, 255, 255),
     0 0 25px rgb(255, 255, 255),
@@ -483,7 +483,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size:25px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
@@ -504,7 +504,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size:25px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
@@ -525,7 +525,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size:25px;
     margin:0 auto;
     color: #fff;
     text-shadow: 
@@ -546,7 +546,7 @@ button:active {
     height: 75px;
     justify-content: left;
     align-content: center;
-    font-size:30px;
+    font-size:25px;
     margin:0 auto;
     color: #fff;
     text-shadow: 

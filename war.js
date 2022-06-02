@@ -23,8 +23,20 @@ const cardCountComputer= document.querySelector('.cardCountComputer');
 const computerElementsBox = document.querySelector('computerelements');
 let computerRank=  document.querySelector('#crank');
 let computerSuit = document.querySelector("#csuit");
-let computerWarCardRank=document.querySelector('#cwarcardrank')
-let computerWarCardSuit=document.querySelector('#cwarcardsuit')
+
+let computerWarCardRank1=document.querySelector('#cwarcardrank1')
+let computerWarCardSuit1=document.querySelector('#cwarcardsuit1')
+
+let computerWarCardRank2=document.querySelector('#cwarcardrank2')
+let computerWarCardSuit2=document.querySelector('#cwarcardsuit2')
+
+let computerWarCardSuit3=document.querySelector('#cwarcardsuit2')
+let computerWarCardRank3=document.querySelector('#cwarcardrank2')
+
+let computerWarCardSuit4=document.querySelector('#cwarcardsuit4')
+let computerWarCardRank4=document.querySelector('#cwarcardrank4')
+//        --------computer war variables--------------
+
 //         ----------playerstuff---------------
 let players_deck = document.querySelector('.players_deck');
 let cardsWonPlayer= document.querySelector('.cardsWonPlayer');
@@ -32,8 +44,19 @@ let cardcountplayer= document.querySelector('cardcountplayer');
 let playerElementsBox = document.querySelector('playerelements');
 let playerRank= document.querySelector('#prank');
 let playerSuit= document.querySelector('#psuit');
-let playerWarCardRank=document.querySelector('#pwarcardrank')
-let playerWarCardSuit=document.querySelector('#pwarcardsuit')
+//        --------player war variables--------------
+let playerWarCardRank1=document.querySelector('#pwarcardrank1')
+let playerWarCardSuit1=document.querySelector('#pwarcardsuit1')
+
+let playerWarCardRank2=document.querySelector('#pwarcardrank2')
+let playerWarCardSuit2=document.querySelector('#pwarcardsuit2')
+
+let playerWarCardSuit3=document.querySelector('#pwarcardsuit2')
+let playerWarCardRank3=document.querySelector('#pwarcardrank2')
+
+let playerWarCardSuit4=document.querySelector('#pwarcardsuit4')
+let playerWarCardRank4=document.querySelector('#pwarcardrank4')
+
 //      ---------gamestatusbox------------
 let gameStatus = document.querySelector('#gameStatus');
 //      ---------querySelector------------
@@ -78,7 +101,7 @@ createDeck()//invoking
 function dealCards(){
     playerCardsArray = (deck.splice(0,26)) //link to the html of the card count
     computerCardsArray  = (deck.splice(0,26))
-    gameStatus.innerText = "Play a card"//link this to the html of the carcount
+    gameStatus.innerText = "Play a card"//link this to the html of the card count
     cardsWonComputer.innerText=computerCardsArray.length;
     cardsWonPlayer.innerText=playerCardsArray.length;
     // console.log(playerCardsArray, playerCards, computerCardsArray, computerCards);
@@ -101,8 +124,8 @@ function playCard (){
     // console.log(playerWarCard.suit)
     compareCards();//insert timeout function
     } else {
-     pullFromDiscard();
-     winnerOfGame();
+        pullFromDiscard();
+        winnerOfGame();
     }
 }
 
@@ -123,7 +146,7 @@ function compareCards() {
                 playerInWarCardsArray = playerCardsArray.splice(0,4),
                 computerInWarCardsArray = computerCardsArray.splice(0,4)
                 // console.log(computerInWarCardsArray, playerInWarCardsArray);
-                playerInWarCard = playerInWarCardsArray.shift()
+                playerInWarCard1 = playerInWarCardsArray.shift(0)
                 computerInWarCard = computerInWarCardsArray.shift()
                 // console.log(computerInWarCard, playerInWarCard)
                 playerWarCardRank.innerText=playerInWarCard.rank;
